@@ -136,24 +136,36 @@ header .logo {
     margin: 0 auto;
     flex-direction: column;
     align-content: center;
-    padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    /* padding: 188px 0; */
+    padding: 72px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mob.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    max-width: 1440px;
+    /* max-width: 1440px; */
+    max-width: 320px;
+}
+
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mob-ret.jpg);
+}
 }
 .hero-text {
     font-weight: 700;
     line-height: 1.07;
     text-align: center;
     color: #FFFFFF;
-    font-size: 56px;
+    /* font-size: 56px; */
+    font-size: 36px;
+    text-transform: capitalize;
     letter-spacing: 0.02em;
-    max-width: 496px;
+    /* max-width: 496px; */
+    max-width: 160px;
     box-sizing: border-box;
     margin: 0 auto;
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
+    margin-bottom: 72px;
 }
 .hero-btn {
     font-family: "Roboto", sans-serif;
@@ -265,8 +277,8 @@ header .logo {
     gap: 24px;
 }
 .team-item {
-    display: block;
-    text-align: center;
+    /* display: block;
+    text-align: center; */
     margin-bottom: 72px;
     padding: 0 28px;
     background-color: #FFFFFF;
@@ -276,9 +288,8 @@ header .logo {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .team-item img {
-    width: calc(100%+28px);
-    /* text-align: center;
-    padding-left: 0;  */
+    margin-left: -16px;
+    width: 264px;
 }
 .team-item-header {
     font-weight: 500;
@@ -436,14 +447,12 @@ header .logo {
 .footer-ul {
     display: flex;
     gap: 16px;
+    margin-right: 80px;
 }
 .footer-a {
     display: flex;
 }
-.footer-icons {
-    padding-left: 120px;
-    padding-right: 80px;
-}
+
 .footer-links {
     font-weight: 500;
     font-size: 16px;
@@ -744,6 +753,37 @@ footer .logo {
     .container {
         width: 768px;
     }
+    .hero {
+        padding: 112px 0;
+        max-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-pl.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-pl-ret.jpg);
+    }
+    }
+    .hero-text {
+        font-size: 56px;
+        text-transform: none;
+        margin-bottom: 36px;
+        max-width: 496px;
+    }
+    .team {
+        padding: 0 108px;
+    }
+    .team-header {
+        padding-top: 96px;
+    }
+    .team-list {
+        width: 552px;
+        gap: 64px 24px;
+    }
+    .team-item {
+        margin-bottom: 0;
+        padding: 0 16px;
+        max-width: 264px;
+    }
     .benefits {
         padding: 96px 16px;
     }
@@ -767,14 +807,30 @@ footer .logo {
     .container {
         width: 1158px;
     }
+    .hero {
+        padding: 188px 0;
+        max-width: 1440px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-ret.jpg);
+    }
+    }
+    .hero-text {
+        margin-bottom: 48px;
+    }
+    .team {
+    padding: 120px 0;
+    }
+    .team-header {
+        padding-top: 0;
+    }
     .team-list {
         flex-wrap: nowrap;
+        gap: 24px
     }
-    .team-item {
-        margin-bottom: 0;
-        padding: 0 16px;
-        width: 264px;
-    }
+
     .benefits {
         padding: 120px 0;
     }
