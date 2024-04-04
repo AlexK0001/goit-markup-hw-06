@@ -368,7 +368,7 @@ header .logo {
 .team-icon-ul {
     display: flex;
     justify-content: center;
-    padding-top: 8px;
+    /* padding-top: 8px; */
     gap: 24px;
 }
 .team-icon-li {
@@ -535,6 +535,7 @@ header .logo {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-right: 80px;
 }
 .footer-icon {
     fill: #f4f4fd;
