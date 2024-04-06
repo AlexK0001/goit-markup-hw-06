@@ -108,6 +108,7 @@ header .logo {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav-link {
+    color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
@@ -343,7 +344,8 @@ header .logo {
     flex-wrap: wrap;
     gap: 24px;
     max-width: 264px;
-    margin: o 28px;
+    /* margin: 0 28px; */
+    margin: 0 auto;
 }
 .team-item {
     /* display: block;
@@ -502,16 +504,17 @@ header .logo {
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
+    justify-content: center;
     /* margin: 96px 16px; */
     /* align-items: baseline; */
     /* align-items: center;
-    justify-content: center;
     margin: 0 auto; */
 }
 .footer-info {
     /* margin-right: 120px; */
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 .footer-text {
     font-weight: 400;
@@ -580,7 +583,8 @@ footer .logo {
     /* flex-direction: column; */
     gap: 16px;
     justify-content: space-around;
-    max-width: 268px;
+    /* max-width: 268px; */
+    width: 100%;
 }
 .footer-subscribe {
     font-weight: 500;
@@ -853,6 +857,7 @@ footer .logo {
     .header {
         padding: 24px 15px;
     }
+    
     .address-list {
         display: flex;
         flex-wrap: wrap;
@@ -938,6 +943,9 @@ footer .logo {
         gap: 72px 24px;
         max-width: 582px;
     }
+    .footer-info {
+        width: 264px;
+    }
     .footer-links {
         justify-content: flex-start;
     }
@@ -959,6 +967,7 @@ footer .logo {
     }
     .subscribe {
         display: block;
+        /* width: 268px; */
         max-width: none;
     }
     .footer-subscribe {
@@ -985,6 +994,9 @@ footer .logo {
 @media screen and (min-width: 1158px) {
     .container {
         width: 1158px;
+    }
+    .header {
+        padding: 0;
     }
     .header-list {
         display: flex;
@@ -1068,6 +1080,9 @@ footer .logo {
         gap: 0;
         justify-content: start;
         max-width: none;
+    }
+    .footer-info {
+        width: 100%;
     }
     .footer-info {
         margin-right: 120px;
