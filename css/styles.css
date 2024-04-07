@@ -504,7 +504,7 @@ header .logo {
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
-    justify-content: center;
+    /* justify-content: center; */
     /* margin: 96px 16px; */
     /* align-items: baseline; */
     /* align-items: center;
